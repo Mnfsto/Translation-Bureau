@@ -1,0 +1,94 @@
+//Colors
+$primary: #0D0C0E;
+$secondary: #1C1B20;
+$secondLight: #3F3F3F;
+$Grey: #88878F;
+$LightGrey: #BDBCC5;
+$purpleDark: #0B0419;
+$accentDark: #13072D;
+$accent: #220C5A;
+$accentLight: #4C1EF3;
+
+
+//Fonts
+
+$headingX1: 4rem "Intro", sans-serif;
+$title15: 0.9375rem "Inter", sans-serif;
+$title20: 1.25rem "Inter", sans-serif;
+$navMenu: 1.25rem "Inter", sans-serif;
+$h2inter: 2.25rem "Inter", sans-serif;
+$paragraph: 0.9375rem "Inter", sans-serif;
+$textshadow: 1px 6px 10px rgba(35, 31, 32, 0.20), 0px 1px 10px rgba(35, 31, 32, 0.21);
+
+%heading{
+    font: $h2inter;
+    text-shadow: $textshadow;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+%parahraph{
+    font: $paragraph;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+%parahraph13{
+    @extend %parahraph;
+    font-size: 0.8125rem;
+}
+
+li{
+    @extend %parahraph13;
+    padding-top: 0.8rem;
+}
+
+h1,h2,h3,h4,h5{
+    @extend %heading
+}
+
+p{
+    @extend %parahraph
+}
+
+
+    
+
+
+
+//Button
+%button {
+    display: inline-block;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding: 5px 45px;
+    border: 0;
+    box-shadow: 0px 2px 6px 0px rgba(13, 12, 14, 0.24), 0px 1px 45px 0px rgba(151, 71, 255, 0.18);
+}
+
+
+.primary_btn{
+    @extend %button;
+    background-color: $primary;
+    color: aliceblue;
+    
+    &:hover{
+        background-color: $secondary;
+        cursor: pointer;
+    }
+.secondary_btn{
+    border-radius: 0;
+    @extend %button;
+    color: $primary;
+    background-color: $secondLight;
+    border-inline: 0;
+
+}
+}
+
+$btn_shadow: 0px 2px 6px 0px rgba(13, 12, 14, 0.24), 0px 1px 45px 0px rgba(151, 71, 255, 0.18);

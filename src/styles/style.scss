@@ -1,0 +1,286 @@
+@import "reset";
+@import "mixins";
+@import "designsys";
+@import "fonts";
+
+.blockHeader{
+    margin-top: 50px;
+    text-align: center;
+}
+
+header{
+    margin: 20px 40px;
+    background-color: white;
+    
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        
+       
+
+        span{
+           .phone{
+            font: $navMenu;
+            margin-right: 20px;
+           }
+            a{
+                display: inline-block;
+                text-decoration: none;
+                color: $secondary;
+                vertical-align: middle;
+            }
+        }
+        
+    }
+}
+
+
+.headerNav{
+    font: $navMenu;
+    a{
+        padding: 10px;
+    }
+    
+}
+
+.bannerTop{
+position: relative;
+height: 430px;
+
+    .heroContent{
+       position: absolute;
+       width: 65%;
+       top: 30%;
+        padding: 0 65px;
+}
+    h1{
+        font: $headingX1;
+        font-weight: 500;
+        color: $primary;
+}
+    p{
+        font-size: 0.9em;
+        font-weight: 700;
+        color: $secondary;
+    }
+
+    button{
+        margin-top: 30px;
+    }
+
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.partnerBlock{
+    width: 23.75%;
+    padding: 10px;
+    padding-left: 40px;
+    margin-top:10px;
+    p{
+        font: $title20;
+       text-transform: uppercase;
+       font-weight: 600;
+
+    }
+    ul{
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        
+        li{
+          padding-right: 20px;
+        }
+    }
+}
+
+.formUploader{
+    width: 76.25%;
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 20px;
+    border-left: 1px solid #88878F;
+    margin-top:10px;
+    
+    p{
+          font: $title20;
+          font-weight: 600;
+          text-shadow: $textshadow;
+        }
+      
+
+}
+
+.modal{
+    form{
+        margin-bottom: 30px;
+    }
+    .primary_btn{
+        margin-top: 20px;
+    }
+    .secondary_btn{
+        margin-top: 20px;
+    }
+}
+
+
+.service-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    margin: 40px;
+    height: 500px;
+
+  
+}
+
+.order-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 60px 0;
+    
+    h4{
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    p{
+        font: $title20;
+        padding-bottom: 20px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .form-style{
+        width: 700px;
+    }
+    form{
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    }
+    form [type=text], form [type=email], .StripeElement {
+        width: 100%;
+    }
+    button{
+        margin: 50px auto;
+    }
+    
+}
+
+.news-wrapper{
+    margin: 100px 40px;
+    .firstCard{
+        .title{
+            margin-top: 200px;
+        }
+    }
+
+    h5{
+        margin: 40px auto;
+        text-align: center;
+    }
+    
+    span {
+            display: flex;
+            padding: 10px;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+    }
+    .card-wrapper{
+        align-items: normal;
+    }
+
+    .card-wrapper .body-wrapper {
+        padding: 5px;
+        div{
+            padding: 20px;
+            overflow: hidden;
+        }
+        
+    }
+    .card-wrapper .body-wrapper p {
+        padding-top: 0px; 
+        padding-bottom: 0px;
+    }
+    .title{
+        padding: 5px;
+    }
+
+    .content{
+        font-size: 13px;
+        padding: 5px;
+        
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 40px;
+    
+    color: white;
+    background-color: $purpleDark;
+    .footer-wrapper{
+        display: flex;
+    }
+    .footerSoc{
+        width: 40%;
+    }
+    .footerNav{
+        width: 30%;
+        padding-left: 40px;
+        p{
+            font: $title15;
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+            font: $title15;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+    }
+
+    .footerSoc{
+        .contSoc{
+            img{
+                margin-right: 10px;
+            }
+        }
+
+        p{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    .footerContact{
+        width: 30%;
+    }
+    .copyright{
+        padding: 5px;
+        display: flex;
+        width: 100%;
+        font-size: 9px;
+    }
+}
+
+
+
+
