@@ -1,5 +1,5 @@
 
-import "@/styles/component.card.scss"
+
 export default function News(props) {
     const { className, children, ...rest } = props;
   

@@ -3,6 +3,8 @@
 @import "designsys";
 @import "fonts";
 
+
+
 .blockHeader{
     margin-top: 50px;
     text-align: center;
@@ -41,6 +43,9 @@ header{
     font: $navMenu;
     a{
         padding: 10px;
+        &:hover{
+            opacity: 0.6;
+        }
     }
     
 }
@@ -72,7 +77,7 @@ height: 430px;
 
 }
 .wrapper{
-    width: 100%;
+    
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -105,7 +110,6 @@ height: 430px;
 .formUploader{
     width: 76.25%;
     padding: 10px;
-    padding-right: 40px;
     padding-left: 20px;
     border-left: 1px solid #88878F;
     margin-top:10px;
@@ -165,7 +169,7 @@ height: 430px;
         font-weight: 500;
     }
     .form-style{
-        width: 700px;
+        width: 51.470588235294118%;
     }
     form{
         display: flex;
@@ -184,6 +188,18 @@ height: 430px;
 }
 
 .news-wrapper{
+    .cuttedText{
+        
+  height: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+        
+    }
+    .cuttedContent{
+        height: 105px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     margin: 100px 40px;
     .firstCard{
         .title{
@@ -230,14 +246,188 @@ height: 430px;
     }
 }
 
+
+.servicepage-wrapper{
+    sidebar{
+        width: 50%;
+    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    margin: 40px;
+
+    h1{
+        padding: 40px 0;
+    }
+    
+.sectionNav {
+    width: 100%;
+    a{
+        width: 16.176470588235294%;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        border-left: 1px solid $LightGrey;
+        text-decoration: none;
+        color: $primary;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &:hover{
+            opacity: 0.6;
+        }
+        
+    }
+    .firstlineNav{
+        width: 100%;
+        a:first-child{
+            border: none;
+        }
+    }
+    .secondlineNav{
+        width: 100%;
+        border-top: 1px solid $LightGrey;
+        a:first-child{
+            border: none;
+        }
+    }
+
+    .active{
+        color:#FFF;
+        background-color: $secondary;
+    }
+   
+}
+
+
+article{
+    margin-top: 60px;
+    width: 50%;
+    ul{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .listCard{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        background: #FFF;
+        box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.25) inset;
+        
+
+        .title{
+            font: $title20;
+            font-weight: 600;
+            padding: 10px;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.7;
+            } 
+            
+        }
+        
+    }
+    .list-paragraph{
+        padding: 20px;
+        padding-right: 40px;
+        opacity: 0.8;
+        
+    }
+}
+
+}
+
+.headingContact{
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.contact-wrapper{
+    display: flex;
+
+    padding: 40px;
+    .form-style{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        form{
+            display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+        margin-bottom: 150px;
+        }
+        
+        form [type=text], form [type=email], .StripeElement {
+            width: 100%;
+        }
+    }
+    .contSoc{
+        display: flex;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end
+    }
+    section{
+        width: 50%;
+        h3{
+            margin-top: 200px;
+        }
+    }
+    
+    .contactInfo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        height: 100px;
+
+        a{
+        font: $h2inter;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform:uppercase;
+        text-align: right;
+        color: $primary;
+
+        
+    }
+
+    
+    }
+}
+
+
+.pageNews-wrapper{
+    margin: 60px 40px;
+    article{
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    .newsContent{
+        padding: 40px;
+        box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.25) inset;
+        h2{
+            padding-bottom: 20px;
+        }
+
+    }
+    .date{
+        padding: 40px 10px;
+    }
+}
+
+
 footer{
     width: 100%;
-    padding: 40px;
-    
     color: white;
     background-color: $purpleDark;
     .footer-wrapper{
         display: flex;
+        padding: 40px;
     }
     .footerSoc{
         width: 40%;
@@ -273,8 +463,13 @@ footer{
     .footerContact{
         width: 30%;
     }
+    hr{
+        margin: 20px 40px;
+        box-sizing: border-box;
+    }
     .copyright{
-        padding: 5px;
+        box-sizing: border-box;
+        padding: 20px 40px;
         display: flex;
         width: 100%;
         font-size: 9px;
@@ -283,4 +478,4 @@ footer{
 
 
 
-
+@import "_mediaqueries";

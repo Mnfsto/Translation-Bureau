@@ -14,6 +14,7 @@ export default async function news (){
               title
               uri
               content
+              date
             }
           }
         }
@@ -21,12 +22,27 @@ export default async function news (){
     const { data } = await getClient().query({ query });
     const posts = data.posts.edges.map(({node}) => node);
     
-    console.log ({ posts });
+    console.log ( posts[2].date.split('T')[0] );
     return( 
-    <><div>News</div><article>
-            {posts.map(post => <div key={post.title}>{post.title}</div>)}
+      <main className="pageNews-wrapper">
+    <h1>News</h1>
+        
+    <article>
+      
+            {posts.map(post =>
+              <div id={post.uri} className="newsContent" key={post.uri}>
+                
+                <h2>{post.title}</h2>
+                <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                <div className="date">{post.date.split('T')[0]}</div>
 
-        </article></>
+              
+              
+              </div>)}
+
+    </article>
+
+        </main>
     
     )
 }

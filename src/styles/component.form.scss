@@ -90,7 +90,11 @@ form select {
     }
   
 #input-file-upload {
-    display: none;
+  position: absolute;
+  height: 70px;
+  width: 14.705882352941176%;
+  top: 0px;
+  opacity: 0;
     }
 
   #label-file-upload {
@@ -129,5 +133,23 @@ form select {
   
   .upload-button:hover {
     text-decoration-line: none;
+  }
+}
+
+
+@media (max-width: 885px) {  
+ 
+ 
+  form [type=text], form [type=email], .StripeElement {
+    width: 175px;
+
+    .form-file-upload #label-file-upload {
+      p{
+        font-size: 10px;
+        display: none;
+      }
+      
+    }
+    
   }
 }

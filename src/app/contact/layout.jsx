@@ -1,4 +1,5 @@
 
+import "@/styles/component.form.scss"
 
 export const metadata = {
     title: 'Contact',

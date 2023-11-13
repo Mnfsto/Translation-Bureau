@@ -16,16 +16,8 @@ export default function Partner() {
                     />
                 </Link>
                 </li>
-                <li>
-                <Link href='/'>
-                <Image
-                    src='/logo100MoB.png'
-                    alt='logo' 
-                    width={80}
-                    height={80}
-                    />
-                </Link>
-                </li>
+                
+                
             </ul>
         </div>
     )

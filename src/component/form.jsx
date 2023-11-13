@@ -1,8 +1,7 @@
-"use client";
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import Image from "next/image"
-import '@/styles/component.form.scss'
+import Image from "next/image";
+import '@/styles/component.form.scss';
 
 
 // import { useState } from 'react'
@@ -30,7 +29,7 @@ import '@/styles/component.form.scss'
 export default function InputComponent() { 
     const [state, handleSubmit] = useForm("mjvqzova");
     if (state.succeeded) {
-        return <p>Дякую ми зв'яжемося з вами</p>;
+        return <p style={{color: '#4C1EF3',paddingTop: '20px'}}>Дякую ми зв'яжемося з вами</p>;
     }
     return (
       
@@ -66,21 +65,26 @@ export default function InputComponent() {
         field="message"
         errors={state.errors}
       />
-      <input
-       type="file" 
-       id="input-file-upload" 
-       multiple={true} 
-       />
+      
        <label id="label-file-upload" htmlFor="input-file-upload">
+       
         <div>
           <p>Перетягніть файл сюди або</p>
+          <input
+        type="file"
+        name="attachment"
+        accept="image/png, image/jpeg"   
+        type="file" 
+        id="input-file-upload" 
+        multiple={true} 
+       />
           <Image
          src='/IconDropFile.svg'
           alt='logo' 
           width={50}
           height={50}
         />
-          <button className="upload-button">Додати документ</button>
+          <button type="submit" className="upload-button" disabled={state.submitting}>Додати документ</button>
         </div> 
       </label>
        

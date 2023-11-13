@@ -1,5 +1,5 @@
 "use client"
-import { motion, AnimatePresence } from "framer-motion";
+
 import React from "react";
 import "@/styles/Modal.scss"
 

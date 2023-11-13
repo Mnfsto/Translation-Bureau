@@ -6,7 +6,7 @@ import ServiceCard from "@/component/ServiceCard"
 import OrderForm from "@/component/OrderForm"
 import Review from "@/component/Review/Review"
 import NewsBlock from"@/component/News/NewsBlock"
-import "@/styles/style.scss"
+
 
 
 
@@ -23,8 +23,9 @@ export default function Home() {
        <OurBenefits />
        <OrderForm className='order-wrapper' heading="Замовити консультацію" title="Заповніть форму і ми з вами швидко зв'яжемося" />
       <Review />
+      
       <NewsBlock style={{ height: "540px", display: "flex"}} />
-
+      
     </main>
   )
 }

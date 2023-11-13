@@ -75,9 +75,13 @@ export default function Footer() {
             <li>Address: вул. Генуезька, 1/2, Одеса</li>
         </ul>    
     </div>
+    
     </div>    
-      
+    
+       <div>
+        <hr style={{borderСolor: 'white'}}></hr>
         <p className="copyright">Copyright © 2023 All rights reserved.</p>
+        </div>
     </footer>
     )
   }

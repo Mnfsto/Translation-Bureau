@@ -23,7 +23,7 @@ export default function Navbar() {
       
       <span className='headerNav'>
       <Link href="/">Головна</Link>
-      <Link href="/services">Послуги</Link>
+      <Link href="/documents">Послуги</Link>
       <Link href="/contact">Контакти</Link>
       <Link href="/news">Новини</Link>
       </span>
@@ -34,17 +34,17 @@ export default function Navbar() {
      
 
     
-      <Link href='https://www.facebook.com/profile.php?id=61553575850493'>
+      <Link className='soc' href='https://www.facebook.com/profile.php?id=61553575850493'>
       <Image
-         src='/Facebook.svg'
+         src='/icons/Facebook.svg'
           alt='logo' 
           width={30}
           height={30}
         />
       </Link>
-      <Link href='https://www.instagram.com/translation.bureau.od'>
+      <Link className='soc' href='https://www.instagram.com/translation.bureau.od'>
       <Image
-         src='/linkedin.svg'
+         src='/icons/Instagram.svg'
           alt='logo' 
           width={30}
           height={30}
