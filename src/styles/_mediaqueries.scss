@@ -1,75 +1,221 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
-  
+        .service-wrapper{
+          height: 780px!important;
+        p{
+          font-size: 0.6em!important;
+        }
+      } 
+
+      .benefits-wrapper{
+        height: 415px !important;
+        h2{
+          font-size: 1.5em!important;
+        }
+        h3{
+          font-size: 1em!important;
+        }
+        p{
+          font-size: 0.7em!important;
+        }
+        li{
+          font-size: 0.7em!important;
+        }
+        .bodyBenefits div {
+          padding: 10px!important;
+      }
+
+    }
+    .title-wrapper{
+      display: block!important;
+      button-container{
+        img{
+      width: 10px!important;
+    }
+    }
+    }
+
+    .contact-wrapper{
+      section{
+        h2{
+          font-size:  0.9em!important;
+          margin-top: 120px;
+        }
+        h3{ 
+        font-size:  0.8em!important;
+        margin-top: 100px!important;
+        width: 150px;
+        }
+    } 
+    .contactInfo {
+      a{
+        font-size: 0.9em!important;
+      }
+      .contSoc{
+        
+        width: 25px!important;
+      
+      }
+    }
+    }
+
+    .sectionNav{
+      a{
+        font-size: 0.5em;
+        height: 20px!important;
+      }
+    }
+    .listServices{
+      h2{
+        font-size: 1.5em;
+      }
+    }
+    .servicepage-wrapper{
+      sidebar{
+        width: 100%;
+      }
+      
+      article{
+        width: 100%;
+      }
+      .order-wrapper{
+          margin: 0;
+        .form-style {
+          width: 100%;
+          }
+          form {
+            justify-content: center;
+          }
+        h4{
+          font-size: 1.3em;
+        }
+        p{
+          font-size: 0.9em;
+        }
+      }
+    }
+    .pageNews-wrapper{
+      p{
+        font-size: 0.7em;
+      }
+    }
+    
  }
 
 // Small devices (landscape phones, less than 768px)
  @media (max-width: 767px) { 
-          .heroContent{
-            top:10%;
-          }
 
-          .bannerTop h1 {
-            
-            font-size: 2.5em;
-          
-        }
-          .modal-wrapper .modal {
-            right: 46px;
-          }
-        
-
-
-          .form-file-upload {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          max-width: 100%;
-          width: 100%;
-          text-align: center;
-          position: relative;
-          flex-direction: column;
-
-
-        
-          
-          .headerNav{
+          header{
+            .clback{
             display: none;
-          }
+            }
+        }
+        .headerNav{
+          display: none;
 
-          .formUploader p {
-            text-align: center;
+        }
+
+          .bannerTop  {
+            .heroContent{
+              top:25%;
+              h1{
+                font-size: 2.5em;
+              }
+              p{
+                font-size: 0.8em;
+              }
+            }
+            .modal-wrapper .modal {
+              right: 46px;
+            }
           }
-          form [type=text], form [type=email], .StripeElement {
-            width: 275px;
+      
+        
+          .wrapper{
+            .formUploader{
+              p{
+                text-align: center;
+                font-size: 1em;
+              }
+              }
+            .form-file-upload {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            flex-direction: column;                                      
+            
+            
 
             
-          }
+          }  
 
-          .blockHeader{
-            margin-bottom: 50px;
+          .form-file-upload #input-file-upload {
+            position: absolute;
+            height: 100px;
+            width: 200px;
+            top: 190px;
           }
           
-          .service-wrapper{
-            margin-bottom: 100px;
-            .card-wrapper{
-            
-              figure:last-child{
-                display:none;
-              }
-            } 
-            .body-wrapper {
-              padding: 20px;
-            }
-          }   
+        
         }
-            
+        form [type=text], form [type=email], .StripeElement {
+          width: 300px!important;              
+        }
+        .blockHeader{
+          padding-bottom: 20px;
+        }
+
+        .service-wrapper{
+                height: 950px;
+                margin-bottom: 100px;
+                .card-wrapper{
+                  width: 23.8970588235%*2;
+                  .body-wrapper {
+                    padding: 20px;
+                  }
+              }
+        }   
+
+        .benefits-wrapper {
+          height: 500px!important;
+
+        }
+
+        .news-wrapper span {
+          justify-content: center;
+          padding: 0;
+        }
+        .firstCard{
+          display: none;
+        }
+
+        .review-wrapper .review-container .review {
+          padding: 20px 15px!important;
+                }
+
+        }
+
+
+        //Max devices
+@media (min-width: 885px) {  
+    .bm-burger-button{
+      display: none;
+    }        
+
 
 }
 
  @media (max-width: 885px) {  
+                
+              
  
               .formUploader {
+
                 #label-file-upload {
                 p{
                   font-size: 10px;
@@ -78,7 +224,9 @@
                 
               }
             }
+            
 
+           
   
  
  
@@ -87,6 +235,12 @@
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
+
+                    
+                .bm-burger-button {
+                display: relative!important;
+                }
+              
               .headerNav{
                 font-size: 1rem;
               }
@@ -122,6 +276,22 @@
 
             .bannerTop h1{
               font-size: 3.5rem;
+            }
+
+            .contact-wrapper{
+              section{
+                h2{
+                  font-size:  1.5em;
+                }
+                h3{ 
+                font-size:  1.5em;
+                }
+            } 
+            .contactInfo {
+              a{
+                font-size: 1.5em;
+              }
+            }
             }
 }
 

@@ -4,6 +4,8 @@ import Image from "next/image"
 import Button from '../button';
 import Callback from '@/component/Modal/Callback';
 import { useState } from "react";
+import Hamburger from '@/component/Navbar/hamburger';
+
  
 export default function Navbar() {
   const phone = '+380 (97) 600 63 64';
@@ -11,6 +13,7 @@ export default function Navbar() {
   
   return (
     <header>
+      
       <nav>
       <Link href='/'>
       <Image
@@ -51,10 +54,13 @@ export default function Navbar() {
         />
       </Link>
       </span>
+      <Hamburger />
+      <span className='clback'>
       {show && <Callback shown={show} close={() => {setShow(!show);}} />}
     <Link href="/?modal=true" onClick={() => setShow(!show)}>
     <Button text={'Callback'} href='/#'/>
     </Link>
+    </span>
     <></>
     
         

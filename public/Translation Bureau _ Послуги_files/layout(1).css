@@ -1,0 +1,151 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/styles/component.form.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* reset */
+form input,
+form select,
+form textarea,
+form fieldset,
+form optgroup,
+form label,
+.StripeElement {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+form label,
+form legend {
+  font-size: 0.825rem;
+  margin-bottom: 0.5rem;
+}
+
+/* border, padding, margin, width */
+form input,
+form select,
+form textarea,
+.StripeElement {
+  box-sizing: border-box;
+  border-bottom: 1px solid #88878F;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.5em 0.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  margin: 10px;
+}
+form input:focus,
+form select:focus,
+form textarea:focus,
+.StripeElement:focus {
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus,
+.StripeElement:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: #ffffff;
+  outline-offset: -1px;
+}
+
+form [type=text],
+form [type=email],
+.StripeElement {
+  width: 238px;
+}
+
+form [type=button],
+form [type=submit],
+form [type=reset] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+form [type=button]:focus,
+form [type=submit]:focus,
+form [type=reset]:focus {
+  outline: none;
+}
+
+form select {
+  text-transform: none;
+}
+
+.form-file-upload {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.form-file-upload legend {
+  width: 100%;
+}
+.form-file-upload #input-file-upload {
+  position: absolute;
+  height: 70px;
+  width: 14.7058823529%;
+  top: 0px;
+  opacity: 0;
+}
+.form-file-upload #label-file-upload {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: #88878F;
+  background-color: #f8fafc;
+  cursor: pointer;
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.08), 0px 8px 20px 0px rgba(0, 0, 0, 0.1), 2px 2px 10px 0px rgba(35, 31, 32, 0.2);
+}
+.form-file-upload #label-file-upload p {
+  font-size: 12px;
+  text-shadow: none;
+  font-weight: 300;
+}
+.form-file-upload div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-file-upload .upload-button {
+  cursor: pointer;
+  padding: 0.25rem;
+  font-size: 1rem;
+  border: none;
+  font-family: "Inter", sans-serif;
+  background-color: transparent;
+}
+.form-file-upload .upload-button:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+@media (max-width: 885px) {
+  form [type=text], form [type=email], .StripeElement {
+    width: 175px;
+  }
+  form [type=text] .form-file-upload #label-file-upload p, form [type=email] .form-file-upload #label-file-upload p, .StripeElement .form-file-upload #label-file-upload p {
+    font-size: 10px;
+    display: none;
+  }
+}

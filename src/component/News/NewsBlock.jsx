@@ -1,7 +1,7 @@
 import News from "@/component/News/News"
 import NewsBody from "@/component/News/NewsBody";
 import Image from "next/image";
-import ItemList from "@/component/News/NewsItems"
+
 import { useQuery } from '@apollo/client';
 import { gql } from '@apollo/client';
 

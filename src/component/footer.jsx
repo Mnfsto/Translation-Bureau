@@ -56,7 +56,7 @@ export default function Footer() {
         <p>Навігація:</p>
         <ul>
             <li><Link href="/">Головна</Link></li>
-            <li><Link href="/services">Послуги</Link></li>
+            <li><Link href="/documents">Послуги</Link></li>
             <li><Link href="/contact">Контакти</Link></li>
             <li><Link href="/news">Новини</Link></li>
         </ul>

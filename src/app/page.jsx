@@ -24,7 +24,7 @@ export default function Home() {
        <OrderForm className='order-wrapper' heading="Замовити консультацію" title="Заповніть форму і ми з вами швидко зв'яжемося" />
       <Review />
       
-      <NewsBlock style={{ height: "540px", display: "flex"}} />
+      <NewsBlock style={{ height: "39.705882352941176%", display: "flex"}} />
       
     </main>
   )

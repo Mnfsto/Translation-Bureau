@@ -31,3 +31,21 @@
         }
     }
 }
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { 
+    .card-wrapper {
+        display: block!important;
+      }
+
+      news-wrapper .card-wrapper .body-wrapper div {
+        padding: 10px!important;
+      }
+      card-wrapper .body-wrapper .title {
+        font-size: 0.4em!important;
+      }
+
+
+
+}
