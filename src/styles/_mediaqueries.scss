@@ -1,104 +1,113 @@
-
-@media (max-width: 390.98px) { 
-  footer{ 
-    .footerContact{
-     li {
-        font-size: 0.5em !important;
-        }
-      }
-      }
-}
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
-        .service-wrapper{
-          height: 930px!important;
-        p{
-          font-size: 0.6em!important;
-        }
+
+      .footerContact{
+      li {
+       font-size: 0.5em;
+       }
+     }
+
+     main{
+     .service-wrapper{
+      height: 830px;
+      .body-wrapper{
+      .title{
+        font-size: 0.8em;
       } 
+      p{
+      font-size: 0.5em;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      }
+      }
+      }
       .contact-wrapper{
-      form [type=text], form [type=email], .StripeElement {
-        width: 200px!important;              
-      }
-      }
+        form [type=text], form [type=email], .StripeElement {
+          width: 200px;              
+        }
+        }
+    }
+    
+
+      main{
       .benefits-wrapper{
-        margin-top: 70px!important;
-        
-        height: 415px !important;
+        margin-top: 70px;
+        .bodyBenefits div {
+          padding: 10px;
         .primary_btn{
           font-size: 1em;
           padding: 5px 30px;
         }
         h2{
-          font-size: 1.5em!important;
+          font-size: 1.2em;
         }
         h3{
-          font-size: 1em!important;
+          font-size: 0.8em;
         }
         p{
-          font-size: 0.6em!important;
+          font-size: 0.6em;
         }
         li{
-          font-size: 0.6em!important;
+          font-size: 0.4em;
         }
-        .bodyBenefits div {
-          padding: 10px!important;
-      }
-
-    }
-    .title-wrapper{
-      display: block!important;
-      button-container{
-        img{
-      width: 10px!important;
-    }
-    }
-    }
-
-    .contact-wrapper{
-      section{
-        h2{
-          font-size:  0.9em!important;
-          margin-top: 120px;
-        }
-        h3{ 
-        font-size:  0.8em!important;
-        margin-top: 100px!important;
-        width: 150px;
-        }
-    } 
-    .contactInfo {
-      a{
-        font-size: 0.9em!important;
-      }
-      .contSoc{
         
-        width: 25px!important;
-      
       }
-    }
-    }
+      }
+      }
+      
+      .review-wrapper{ 
+        .review-container{
+          .review>p{
+            padding-top: 20px;
+            font-size: 0.7em;
+          }
+        } 
+        
+      }
 
-    .sectionNav{
-      a{
-        font-size: 0.4em;
-        height: 20px!important;
-      }
-    }
-    .listServices{
-      h2{
-        font-size: 1.5em;
-      }
-    }
-    .servicepage-wrapper{
-      sidebar{
-        width: 100%;
-      }
-      
-      article{
-        width: 100%;
-      }
-      .order-wrapper{
+
+      ////Page Contact
+      .contact-wrapper{
+        section{
+          h2{
+            font-size:  0.8em;
+            margin-top: 115px;
+            width: 80px;
+          }
+          h3{ 
+          font-size:  0.8em;
+          margin-top: 100px;
+          width: 130px;
+          }
+          } 
+          .contactInfo {
+            a{
+              font-size: 0.8em;
+            }
+            
+          }
+        }
+        //////Page Service
+        .servicepage-wrapper{
+        .sectionNav{
+          a{
+            font-size: 0.4em;
+            height: 20px;
+          }
+        }
+        .listServices{
+          h2{
+            font-size: 1.5em;
+          }
+        }
+        sidebar{
+          width: 100%;
+        }
+        
+        article{
+          width: 100%;
+        }
+        .order-wrapper{
           margin: 0;
         .form-style {
           width: 100%;
@@ -112,47 +121,78 @@
         p{
           font-size: 0.9em;
         }
-      }
-    }
-    .pageNews-wrapper{
-      p{
-        font-size: 0.7em;
-      }
-    }
-
-    .review-wrapper{ 
-      .review-container{
-
-        .review>p{
-          padding-top: 20px!important;
-          font-size: 0.7em !important;
         }
-      } 
+        }
+        //////Page News
+        
+        .pageNews-wrapper{
+          .newsContent {
+            h2{
+              font-size: 0.9em;
+            }
+          p{
+            font-size: 0.7em;
+          }
+        }
+        }
+
+        ///Footer
+        footer{
+          .footer-wrapper{
+            .footerNav{
+              padding: 10px 20px;
+              p{
+                font-size: 0.8em;
+              }
+              li{
+                a{
+                font-size: 0.7em;
+              }
+              }
+             }
+              .footerSoc{ 
+              p{
+                font-size: 0.5em;
+                padding:0;
+                padding-bottom: 10px;
+              }
+              
+              .contSoc{
+                img{
+                  width: 20%;
+                }
+              }
+              }
+            }
+          }
       
-    }
-    footer{
+    
+          
 
-     .footerSoc{ 
-      p{
-        font-size: 0.5em;
-      }
-    }
+}
 
-    }
- }
 
 // Small devices (landscape phones, less than 768px)
- @media (max-width: 767px) { 
-
-          header{
-            .clback{
-            display: none;
-            }
-        }
-        .headerNav{
+@media (max-width: 767px) { 
+      //////Header
+        header{
+          .clback{
+          display: none;
+          }
+          
+          .headerNav{
           display: none;
 
+          }
+        }  
+
+        .contSoc{
+          display: none;
         }
+        .bm-burger-button {
+          display: block;
+          }
+
 
           .bannerTop  {
             .heroContent{
@@ -168,8 +208,8 @@
               right: 46px;
             }
           }
-      
-        
+
+          //////Form fileUpload
           .wrapper{
             .formUploader{
               p{
@@ -201,31 +241,26 @@
             top: 190px;
           }
           
+          form [type=text], form [type=email], .StripeElement {
+            width: 300px;              
+          }
+        }
         
-        }
-        form [type=text], form [type=email], .StripeElement {
-          width: 300px!important;              
-        }
-        .blockHeader{
-          padding-bottom: 70px;
-        }
-
+       
         .service-wrapper{
-                height: 950px;
-                margin-bottom: 100px;
-                .card-wrapper{
-                  width: 23.8970588235%*2;
-                  .body-wrapper {
-                    padding: 20px;
-                  }
-              }
-        }   
-
-        .benefits-wrapper {
-          height: 500px!important;
-
+          height: 1030px;
+          margin-bottom: 100px;
+          .card-wrapper{
+            width: 23.8970588235%*2;
+            .body-wrapper {
+              padding: 20px;
+            }
+            }
         }
 
+       
+        
+        
         .news-wrapper span {
           justify-content: center;
           padding: 0;
@@ -234,117 +269,161 @@
           display: none;
         }
 
-        .review-wrapper .review-container .review {
-          padding: 20px 15px!important;
-                }
 
+        .title-wrapper{
+          h5{
+            font-size: 1.7em;
+          }
+          .button-container{
+            img{
+              width: 50%;
+            }
+          }
         }
 
+        ////review
+        main{
+        .review-wrapper{
 
-        //Max devices
-@media (min-width: 885px) {  
-    .bm-burger-button{
-      display: none;
-    }        
+        .review-container{
+          padding: 0 20px;
+          justify-content: center;
+        .review {
+          padding: 20px 15px;
 
+          &:first-child{
+            margin-right: 0;
+            }
+          &>p{
+            padding-top: 20px;
+          }  
+            }
+            }
+          } 
+        }
+
+        ///news blockk
+        .news-wrapper{
+          div{
+            justify-content: center;
+          }
+          .card-wrapper{
+          .body-wrapper{
+            img{
+              width: 20%;
+            }
+            .date{
+              font-size: 0.8em;
+              text-align: left;
+            }
+            div{
+              padding: 5px;
+            }
+          .title{
+            font-size: 0.6em;
+          }
+          .content{
+            font-size: 0.4em;
+          }
+        }
+        }
+        }
 
 }
 
- @media (max-width: 885px) {  
-                
-              
- 
-              .formUploader {
-
-                #label-file-upload {
-                p{
-                  font-size: 10px;
-                  display: none;
-                }
-                
-              }
+@media (min-width: 760px) and (max-width: 959.98px){
+        .service-wrapper{
+          height: 1030px;
+          margin-bottom: 100px;
+          .card-wrapper{
+            width: 23.8970588235%*2;
+            .body-wrapper {
+              padding: 20px;
+            }
+            }
+        }
+        main{
+          .benefits-wrapper{
+            margin-top: 70px;
+            .bodyBenefits div {
+              padding: 10px;
+            .primary_btn{
+              font-size: 1em;
+              padding: 5px 30px;
+            }
+            h2{
+              font-size: 1.9em;
+            }
+            h3{
+              font-size: 1.2em;
+            }
+            p{
+              font-size: 0.9em;
+            }
+            li{
+              font-size: 0.7em;
             }
             
+          }
+          }
+          }
 
-           
+           ////review
+        main{
+          .review-wrapper{
   
- 
- 
-   
-  }
+          .review-container{
+            padding: 0 20px;
+            justify-content: center;
+          .review {
+            padding: 20px 25px;
+  
+            &:first-child{
+              margin-right: 0;
+              }
+            &>p{
+              padding-top: 20px;
+            }  
+              }
+              }
+            } 
+          }
+
+          ////Page Contact
+      .contact-wrapper{
+        section{
+          h2{
+            font-size:  1.8em;
+            margin-top: 110px;
+            
+          }
+          h3{ 
+          font-size:  1.8em;
+          margin-top: 80px;
+          
+          }
+          } 
+          .contactInfo {
+            a{
+              font-size: 1.8em;
+            }
+            
+          }
+        }
+
+} 
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) { 
-
-                    
-                .bm-burger-button {
-                display: relative!important;
-                }
-              
-              .headerNav{
-                font-size: 1rem;
-              }
-              .contSoc{
-                display: none;
-              }
-
-              .wrapper {
-                justify-content: center;
-            }
-
-              .formUploader {
-                width: 100%;
-                padding: 40px;
-                border:0;
-                box-sizing: border-box;
-              }
-              .partnerBlock{
-                display: none;
-              }
- }
-
-
- // Large devices (desktops, less than 1200px)
-@media (max-width: 1102px) { 
-
-              .service-wrapper{
-                height: 630px!important;
-              }
+  .form-file-upload #label-file-upload {
+    p{
+      font-size: 10px;
+      display: none;
+      font-color: $secondLight;
+    }
+    
+  }
   
-              .soc{
-                display: none;
-              }
-              header nav span .phone {
-                font-size: 0.95em;
-            }
 
-            .bannerTop h1{
-              font-size: 3.5rem;
-            }
 
-            .contact-wrapper{
-              section{
-                h2{
-                  font-size:  1.5em;
-                }
-                h3{ 
-                font-size:  1.5em;
-                }
-            } 
-            .contactInfo {
-              a{
-                font-size: 1.5em;
-              }
-            }
-            }
 }
-
-// Large devices (desktops, less than 1200px)
-  @media (max-width: 1199.98px) { 
-    
-  }
-
-// X-Large devices (large desktops, less than 1400px)
-  @media (max-width: 1399.98px) { 
-    
-  }
