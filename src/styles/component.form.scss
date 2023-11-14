@@ -137,19 +137,3 @@ form select {
 }
 
 
-@media (max-width: 885px) {  
- 
- 
-  form [type=text], form [type=email], .StripeElement {
-    width: 175px;
-
-    .form-file-upload #label-file-upload {
-      p{
-        font-size: 10px;
-        display: none;
-      }
-      
-    }
-    
-  }
-}
