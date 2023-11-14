@@ -68,10 +68,10 @@ export default function Footer() {
     <div className="footerContact">
         <p>Бюро перекладів.</p>
         <ul>
-            <li>Phone: 048 722 5959</li>
-            <li>Email: info@translation-bureau.ua</li>
+            <li>Phone: +380(97)600 63 64</li>
+            <li>Email: translation.odesa@gmail.com</li>
             <li>Fax: Not specified</li>
-            <li>Website: https://translation-bureau.com/contacts</li>
+            <li>Website: translation-bureau.com</li>
             <li>Address: вул. Генуезька, 1/2, Одеса</li>
         </ul>    
     </div>

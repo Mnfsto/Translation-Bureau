@@ -7,6 +7,7 @@
 
 .blockHeader{
     margin-top: 50px;
+    margin-bottom: 70px;
     text-align: center;
 }
 
@@ -422,24 +423,27 @@ article{
 
 
 footer{
+    
     width: 100%;
     color: white;
     background-color: $purpleDark;
     .footer-wrapper{
         display: flex;
         padding: 40px;
+       
     }
     .footerSoc{
         width: 40%;
     }
     .footerNav{
         width: 30%;
-        padding-left: 80px;
+        padding: 20px;
         p{
             font: $title15;
         }
         
         a{
+           
             text-decoration: none;
             color: white;
             font: $title15;
@@ -458,10 +462,16 @@ footer{
         p{
             padding-top: 10px;
             padding-bottom: 10px;
+            padding-right: 40px;
         }
     }
     .footerContact{
-        width: 30%;
+        box-sizing: border-box;
+        
+        li{
+            color: white;
+            text-decoration: none;
+        }
     }
     hr{
         margin: 20px 40px;

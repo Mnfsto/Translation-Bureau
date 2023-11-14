@@ -1,14 +1,23 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
         .service-wrapper{
-          height: 780px!important;
+          height: 930px!important;
         p{
           font-size: 0.6em!important;
         }
       } 
-
+      .contact-wrapper{
+      form [type=text], form [type=email], .StripeElement {
+        width: 200px!important;              
+      }
+      }
       .benefits-wrapper{
+        
         height: 415px !important;
+        .primary_btn{
+          font-size: 1em;
+          padding: 5px 30px;
+        }
         h2{
           font-size: 1.5em!important;
         }
@@ -16,10 +25,10 @@
           font-size: 1em!important;
         }
         p{
-          font-size: 0.7em!important;
+          font-size: 0.6em!important;
         }
         li{
-          font-size: 0.7em!important;
+          font-size: 0.6em!important;
         }
         .bodyBenefits div {
           padding: 10px!important;
@@ -61,7 +70,7 @@
 
     .sectionNav{
       a{
-        font-size: 0.5em;
+        font-size: 0.4em;
         height: 20px!important;
       }
     }
@@ -99,7 +108,26 @@
         font-size: 0.7em;
       }
     }
-    
+
+    .review-wrapper{ 
+      .review-container{
+
+        .review>p{
+          padding-top: 20px!important;
+
+        }
+      } 
+      
+    }
+    footer{
+
+     .footerSoc{ 
+      p{
+        font-size: 0.5em;
+      }
+    }
+
+    }
  }
 
 // Small devices (landscape phones, less than 768px)
@@ -136,6 +164,7 @@
               p{
                 text-align: center;
                 font-size: 1em;
+                color: $secondLight;
               }
               }
             .form-file-upload {
