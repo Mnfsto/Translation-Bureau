@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
 
 export const metadata = {
-  title: ' Translation Bureau | Експрес-перекла документів',
+  title: ' Translation Bureau | Експрес-переклад документів',
   description: 'Ваші документи будуть перекладені на будь-яку мову. Замовте зараз та отримайте знижку.',
 }
 

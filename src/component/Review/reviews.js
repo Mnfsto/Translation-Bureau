@@ -1,39 +1,39 @@
 const reviews = [
     {
       id: 1,
-      name: 'susan smith',
-      job: 'web developer',
+      name: 'Олена Коваль',
+      job: 'Менеджер з продажу',
       image:
         '/photo1.avif',
       text:
-        "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+        "Дякую за чудовий сервіс! Переклади були виконані швидко та професійно. Зараз можу спокійно користуватися документами у будь-якій країні. Рекомендую ваші послуги!",
     },
     {
       id: 2,
-      name: 'anna johnson',
-      job: 'web designer',
+      name: 'Ігор Петренко',
+      job: 'Юрист',
       image:
         '/photo2.avif',
       text:
-        'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
+        'Професійний підхід та висока якість перекладів. Важливо мати надійного партнера у справах документації. Дякую за співпрацю, буду рекомендувати ваше агентство колегам!',
     },
     {
       id: 3,
-      name: 'peter jones',
-      job: 'intern',
+      name: 'Марія Литвиненко',
+      job: 'Медсестра',
       image:
         '/photo3.avif',
       text:
-        'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+        'Дуже вдячна за швидкий та точний переклад моїх медичних документів. Тепер можу зручно подавати їх при подорожах та отриманні міжнародних страховок. Ваш сервіс - невід\'ємна частина мого життя!',
     },
     {
       id: 4,
-      name: 'bill anderson',
-      job: 'the boss',
+      name: 'Наталія Шевченко',
+      job: 'Викладач',
       image:
         '/photo4.avif',
       text:
-        'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+        'Вражена вашою командою та якістю послуг. Переклад дипломів та наукових статей був виконаний на високому рівні. Рекомендую ваше агентство своїм студентам та колегам! ',
     },
   ];
   
