@@ -11,7 +11,7 @@ import {
 
 function makeClient() {
   const httpLink = new HttpLink({
-    uri: "https://translation-bureau.com/graphql",
+    uri: "https://local.translation-bureau.com/graphql",
     fetchOptions: { cache: "no-store" },
   });
 

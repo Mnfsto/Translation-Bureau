@@ -54,6 +54,7 @@ export default function Navbar() {
         />
       </Link>
       </span>
+      
       <Hamburger />
       <span className='clback'>
       {show && <Callback shown={show} close={() => {setShow(!show);}} />}

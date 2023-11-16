@@ -4,6 +4,18 @@
 @import "fonts";
 
 
+/////Link Style
+a:link {
+    color: $accent; 
+    
+  }
+  
+  
+  a:active {
+    color: $accent; 
+    
+  }
+
 
 .blockHeader{
     margin-top: 50px;
@@ -486,6 +498,10 @@ footer{
     }
 }
 
+#react-burger-menu-btn{
+
+    margin-left: 200px!important;
+}
 
 /* Position and sizing of burger button */
 .bm-burger-button {
