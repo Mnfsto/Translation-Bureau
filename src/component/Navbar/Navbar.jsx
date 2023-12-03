@@ -37,7 +37,7 @@ export default function Navbar() {
      
 
     
-      <Link className='soc' href='https://www.facebook.com/profile.php?id=61553575850493'>
+      <Link className='soc' href='https://www.facebook.com/odesaTranslationBureau'>
       <Image
          src='/icons/Facebook.svg'
           alt='logo' 

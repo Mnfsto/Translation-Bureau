@@ -14,14 +14,14 @@ export default function Footer() {
           height={48}
         />
       </Link>
-      <p>Бюро перекладів TB надає послуги перекладу вже понад 15 років
-         сотням задоволених клієнтів..</p>
+      <p>Бюро перекладів TB надає послуги перекладу
+          сотням задоволених клієнтів.</p>
       <span className='contSoc'>
 
      
 
     
-      <Link href='https://www.facebook.com/profile.php?id=61553575850493'>
+      <Link href='https://www.facebook.com/odesaTranslationBureau'>
       <Image
          src='/icons/whiteFacebook.svg'
           alt='white Facebook' 

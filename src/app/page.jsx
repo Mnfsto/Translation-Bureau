@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main>
-      <AdvancedBannerTop title={'Експрес-переклад документів'} subtitle={'Ваші документи будуть перекладені на будь-яку мову. Замовте зараз та отримайте знижку.'}/> 
+      <AdvancedBannerTop /> 
       
        <HeadLine/>
        <ServiceCard className='service-wrapper'/>
