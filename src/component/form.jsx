@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Image from "next/image";
 import '@/styles/component.form.scss';
@@ -24,17 +24,40 @@ import '@/styles/component.form.scss';
 //   ); 
 // } 
 
-
-
+//TODO:
+//Сделать субмит формы при вложении файла
+//
+//FIXME:
+//
 export default function InputComponent() { 
     const [state, handleSubmit] = useForm("mjvqzova");
+  
+    const [displayFile, setDisplayFile] = useState({display: 'block'});
+    const [uploadFile, fileUploaded] = useState(false);
+    const uploadStyle ={
+      fontSize: '1em',
+      
+    }
+    
+    const Upload = () =>{
+      fileUploaded(true);
+     
+    }
+
+    useEffect(
+      ()=>{
+        setDisplayFile({display: "none"});
+      },[uploadFile]
+    );
+
+
     if (state.succeeded) {
-        return <p style={{color: '#4C1EF3',paddingTop: '20px'}}>Дякую ми зв'яжемося з вами</p>;
+      return <p style={{color: '#4C1EF3',paddingTop: '20px'}}>Дякую ми зв'яжемося з вами</p>;
     }
     return (
       
 
-      <form className='form-file-upload' onSubmit={handleSubmit}>
+      <form id='form' className='form-file-upload' onSubmit={handleSubmit}>
               
       <input
         id="name"
@@ -73,10 +96,13 @@ export default function InputComponent() {
           <input
         type="file"
         name="attachment"
-        accept="image/png, image/jpeg"   
+        accept="image/png, image/jpeg, application/pdf"   
         type="file" 
         id="input-file-upload" 
         multiple={true} 
+        onDrop={Upload}
+        onChange={Upload}
+        style={displayFile}
        />
           <Image
          src='/IconDropFile.svg'
@@ -84,7 +110,7 @@ export default function InputComponent() {
           width={50}
           height={50}
         />
-          <button type="submit" className="upload-button" disabled={state.submitting}>Додати документ</button>
+          <button type="submit" className="upload-button" disabled={state.submitting}>{uploadFile? <button style={uploadStyle}>Натисніть відправити</button> :'Додати документ'}</button>
         </div> 
       </label>
        
