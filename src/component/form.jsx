@@ -36,7 +36,7 @@ export default function InputComponent() {
     const [uploadFile, fileUploaded] = useState(false);
     const uploadStyle ={
       fontSize: '1em',
-      
+      cursor: 'pointer',
     }
     
     const Upload = () =>{
