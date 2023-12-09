@@ -68,7 +68,7 @@ export default function Footer() {
     <div className="footerContact">
         <p>Бюро перекладів.</p>
         <ul>
-            <li>Phone: +380(97)600 63 64</li>
+            <li>Phone: <a href="tel:+380 (97) 600 63 64" class="phoneFooter">+380 (97) 600 63 64</a></li>
             <li>Email: translation.odesa@gmail.com</li>
             <li>Fax: Not specified</li>
             <li>Website: translation-bureau.com</li>

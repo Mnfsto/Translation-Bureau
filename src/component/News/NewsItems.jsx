@@ -26,6 +26,7 @@ function ItemList() {
   if (error) return <p>Error: {error.message}</p>;
 
   const posts = data.posts.edges;
+  
     
 
   return (

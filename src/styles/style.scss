@@ -238,7 +238,7 @@ height: 430px;
     }
 
     .card-wrapper .body-wrapper {
-        padding: 5px;
+        padding: 10px;
         div{
             padding: 20px;
             overflow: hidden;
@@ -477,6 +477,10 @@ footer{
             padding-bottom: 10px;
             padding-right: 40px;
         }
+    }
+    .phoneFooter{
+        color: white;
+        text-decoration: none;
     }
     .footerContact{
         box-sizing: border-box;
