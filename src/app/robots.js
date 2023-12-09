@@ -6,6 +6,6 @@ export default function robots() {
         allow: '/',
         disallow: '/private/',
       },
-      sitemap: 'hhttp://translation-bureau.com/sitemap.xml',
+      sitemap: 'https://translation-bureau.com/sitemap.xml',
     }
   }
