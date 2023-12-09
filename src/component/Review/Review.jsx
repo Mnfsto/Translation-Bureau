@@ -9,7 +9,7 @@ function ReviewCard({ person }) {
   return (
     <div className='review'>
       <div className='img-container'>
-        <Image alt={name} className='person-img' src={image} width={96} height={96} />
+        <Image alt={name} className='person-img' src={image} width={128} height={128} />
         
         <span className='quote-icon'><p className='author'>{name}</p>
         <p className='job'>{job}</p></span>

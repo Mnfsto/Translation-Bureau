@@ -42,7 +42,7 @@
                         font-size: 1em;
                         text-transform: capitalize;
                         &:last-child{
-                            font-size: 0.8em;
+                            font-size: 0.7em;
                             color: #3F3F3F;
                         }
                     }
@@ -62,7 +62,7 @@
 
 @media (max-width: 767px) { 
     .review-wrapper .review-container .review > p {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
 }

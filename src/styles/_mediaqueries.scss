@@ -58,6 +58,7 @@
       
       .review-wrapper{ 
         .review-container{
+          
           .review>p{
             padding-top: 20px;
             font-size: 0.7em;
@@ -65,7 +66,14 @@
         } 
         
       }
-
+      .review-wrapper .review-container .review .img-container {
+        display: block!important;
+        img{
+          width: 84px;
+          height: 84px;
+        }
+        
+    }
 
       ////Page Contact
       .contact-wrapper{
